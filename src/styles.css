@@ -1,5 +1,88 @@
 /* You can add global styles to this file, and also import other style files */
-
-/* small devices */
-@media (max-width: 575.98px) {
+.home{
+    padding-top: 75px !important;
 }
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: linear-gradient(transparent, rgba(0,0,0,0.5));
+}
+#myCarousel .carousel-item {
+    overflow: hidden;
+    height: 100%;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#myCarousel > .carousel-control {
+    width: 30px;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: none;
+    filter: none;
+    opacity: 1;
+}
+#myCarousel > .carousel-control span {
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+.header-fixed{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.footer-fixed{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+}
+.testCarousel{
+    height: 900px;
+}
+.sticky-header{
+    background-color: #fff;
+    border-bottom-color: #008aff;
+}
+
+.t-white{
+    color: #fff;
+}
+.t-bold{
+    font-weight: bold;
+}
+@media (max-width: 1200px) {
+    .testCarousel{
+        height: 900px;
+    }
+}
+@media (max-width: 992px) {
+    .testCarousel{
+        height: 700px !important;
+    }
+}
+@media (max-width: 768px) {
+    .testCarousel{
+        height: 500px !important;
+    }
+}
+@media (max-width: 576px) {
+    .testCarousel{
+        height: 300px !important;
+    }
+}
+
+

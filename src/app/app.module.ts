@@ -9,9 +9,9 @@ import { AppRoutingModule } from './/app-routing.module';
 import { AppComponent } from './app.component';
 import { SeoService } from './services/seo.service';
 import { ContactService } from './services/contact.service';
-import { HomeComponent } from '../../e2e/app/components/home/home.component';
-import { NavbarComponent } from '../../e2e/app/components/navbar/navbar.component';
-import { FooterComponent } from '../../e2e/app/components/footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
