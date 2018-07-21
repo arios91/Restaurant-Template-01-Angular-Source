@@ -61,9 +61,29 @@
 .t-white{
     color: #fff;
 }
+.t-tomatoRed{
+    color: #fe1400;
+}
 .t-bold{
     font-weight: bold;
 }
+
+.section2Header{
+    color: #fe1400;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    font-style: italic;
+}
+.section2Text{
+    padding-bottom: 1rem;
+    color: #444;
+}
+.section2ActionButton{
+    color: #fff;
+    border-radius: 20px !important;
+    background-color: #fe1400 !important;
+}
+
 @media (max-width: 1200px) {
     .testCarousel{
         height: 900px;
