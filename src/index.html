@@ -48,7 +48,6 @@
 
   $(window).scroll(function () {
     var $scrollTop = $(window).scrollTop();
-    console.log($scrollTop);
 
     if($scrollTop > 1) {
       $header.addClass('sticky-header');
@@ -72,5 +71,26 @@
     $('.navbar-collapse').collapse('hide');
     $header.addClass('sticky-header');
   });
+
+  // Animate Smooth Scroll
+  $('#homeLink').on('click', function() {
+    scrollTo('#home');
+  });
+  $('#menuLink').on('click', function() {
+    scrollTo('#menu');
+  });
+  $('#aboutLink').on('click', function() {
+    scrollTo('#about');
+  });
+  
+  function scrollTo(targetId){
+    const target = $(targetId).position().top;
+    $('html, body').animate(
+      {
+        scrollTop: target - 110
+      },
+      900
+    );
+  }
 </script>
 </html>
