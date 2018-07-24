@@ -9,9 +9,11 @@ import { AppRoutingModule } from './/app-routing.module';
 import { AppComponent } from './app.component';
 import { SeoService } from './services/seo.service';
 import { ContactService } from './services/contact.service';
+import { ProductService } from './services/products.service';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CompanyFooterComponent } from './components/company-footer/company-footer.component';
 
 
 @NgModule({
@@ -20,6 +22,7 @@ import { FooterComponent } from './components/footer/footer.component';
     HomeComponent,
     NavbarComponent,
     FooterComponent,
+    CompanyFooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   providers: [
     SeoService,
-    ContactService
+    ContactService,
+    ProductService
   ],
   bootstrap: [AppComponent]
 })

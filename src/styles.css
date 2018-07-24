@@ -4,6 +4,7 @@
     width: 100%;
     margin-left: 0px !important;
     margin-right: 0px !important;
+    padding-bottom: 40px !important;
 }
 .footer {
     position: absolute;
@@ -13,7 +14,7 @@
     line-height: 60px;
     padding: 0.5rem 1rem;
     color: #fff;
-    background: linear-gradient(transparent, rgba(0,0,0,0.5));
+    background: linear-gradient(transparent, rgba(0,0,0,0.75));
 }
 
 .carousel{
@@ -43,6 +44,12 @@
     text-align: center;
     display: block;
 }
+.companyFooter{
+    text-align: center;
+}
+.companyFooter a{
+    color: #fff !important;
+}
 .header-fixed{
     width: 100%;
     position: fixed;
@@ -63,6 +70,22 @@
 .sticky-header{
     background-color: #fff;
     border-bottom-color: #008aff;
+}
+.sticky-footer{
+    margin-bottom: 50px;
+    transition: all 0.7s ease-in-out;
+}
+.sticky-companyFooter{
+    display: block;
+    transition: all 0.7s ease-in-out;
+}
+.sticky-companyFooter a{
+    color: #444 !important;
+    transition: all 0.7s ease-in-out;
+}
+.sticky-companyFooter a:hover, .sticky-companyFooter a:focus{
+    color: #008aff !important;
+    transition: all 0.4s ease-in-out;
 }
 
 .t-white{
@@ -95,21 +118,48 @@
 .section2-text-wrapper{
     height: 100%;
     text-align: center;
+    padding: 0px 25px;
     background: rgba(255,255,255,0.5);
     box-shadow: 10px 10px 60px 0 rgba(0, 0, 0, .75);
 }
 .section2-header{
-    font-size: 4rem;
+    font-size: 3.50rem;
+    margin-bottom: 50px;
 }
 .section2-content{
-    font-size: 1.65rem;
+    font-size: 1.25rem;
 }
 .section2-actionButton{
-    border-radius: 15px !important;
-    margin-top: 25px;
+    border-radius: 20px !important;
+    margin-top: 50px;
     font-size: 1.25rem !important;
 }
 
+.section3{
+    text-align: center;
+}
+
+.section3-header{
+    margin-top: 25px;
+    font-size: 5rem;
+}
+.section3-categoryButton{
+    margin: 10px 15px;
+    width: 125px;
+    border-radius: 20px !important;
+}
+
+.footer-buttonContainer i{
+    padding: 0px 7px;
+    font-size: 1.5rem;
+}
+.footer-links{
+    text-align: right;
+}
+.footer-links a{
+    color: #fff;
+    padding: 0px 10px !important;
+}
 @media (max-width: 1200px) {
     .testCarousel{
         height: 900px;
@@ -135,14 +185,21 @@
         margin-bottom: 10% !important;
     }
     .section2-header{
-        font-size: 2.25rem !important;
+        font-size: 1.75rem !important;
+        margin-bottom: 0 !important;
+    }
+    .section2-text-wrapper{
+        padding: 0px 0px !important;
     }
     .section2-content{
-        font-size: 1rem;
+        font-size: .8rem;
     }
     .section2-actionButton{
         margin-top: 10px !important;
         font-size: 1rem !important;
+    }
+    .footer-buttonContainer i{
+        font-size: 1.15rem !important;
     }
 }
 

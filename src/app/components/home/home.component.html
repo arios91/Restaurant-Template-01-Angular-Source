@@ -48,7 +48,7 @@
         <div class="section2-text-wrapper">
           <h1 class="section2-header">Short Title</h1>
           <span class="section2-content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut est harum aperiam, sit at reprehenderit?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis delectus adipisci quisquam harum sed! Dolores tenetur voluptate maiores cupiditate nihil?
           </span><br/>
           <button class="btn btn-primary section2-actionButton" type="button">Action Button</button>  
         </div>
@@ -58,14 +58,58 @@
       <img src="../../../../assets/images/plate.png" class="img" alt="AR Web Designs Restaurant Template Image">
   </div>
 
-  <!-- <div class="row" class="section3 text-center px-0">
-    <div class="col-lg-12 section3Header">
+  <div class="col-12 section3">
+    <div class="col-lg-12 section3-header">
       MENU
     </div>
-    <div class="col-lg-12 section3ButtonContainer">
-      <button class="btn btn-primary section3CategoryButton">Category 1</button>
-      <button class="btn btn-primary section3CategoryButton">Category 2</button>
-      <button class="btn btn-primary section3CategoryButton">Category 3</button>
+    <div class="col-lg-12 section3-buttonContainer mb-5">
+      <button class="btn btn-primary section3-categoryButton" (click)="filterCategory('category1')">Category 1</button>
+      <button class="btn btn-primary section3-categoryButton" (click)="filterCategory('category2')">Category 2</button>
+      <button class="btn btn-primary section3-categoryButton" (click)="filterCategory('sides')">Sides</button>
+      <button class="btn btn-primary section3-categoryButton" (click)="filterCategory('drinks')">Drinks</button>
     </div>
-  </div> -->
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-lg-3" *ngFor="let product of productPages[currentPage]">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top ieImage"
+                    src="http://via.placeholder.com/400x400"
+                    alt="{{product.name}}">
+                <div class="card-body" style="text-align: center;">
+                    <p class="mb-0" class="productName">{{product.name}}</p>
+                    <p class="mb-0" class="productDescription">{{product.description}}</p>
+                    <p class="mb-2" class="productPrice">{{product.price | currency}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 text-center" *ngIf="renderPages">
+          <nav aria-label="Page navigation">
+              <ul class="pagination justify-content-center">
+  
+                  <li class="page-item" [ngClass]="{'disabled': atBeginning}">
+                      <a class="page-link" href="#start" aria-label="Previous"(click)="goToPrevious()">
+                          Previous
+                      </a>
+                  </li>
+  
+                  <li class="page-item" *ngFor="let page of pages" [ngClass]="{'active': currentPage == page}">
+                      <a class="page-link" href="#start" (click)="goToPage(page)">{{page}}</a>
+                  </li>
+  
+                  <li class="page-item" [ngClass]="{'disabled': atEnd}">
+                      <a class="page-link" href="#start" aria-label="Next"(click)="goToNext()">
+                          Next
+                      </a>
+                  </li>
+  
+              </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-12" style="height: 500px"></div>
 </div>
