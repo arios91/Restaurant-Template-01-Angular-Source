@@ -44,6 +44,45 @@
     text-align: center;
     display: block;
 }
+
+.carousel-item1{
+    top: 30%;
+    height: 50%;
+    color: #fff;
+    text-align: left;
+    position: relative;
+}
+
+.carousel-item2{
+    top: 25%;
+    height: 50%;
+    color: #444;
+    position: relative;
+    text-align: center;
+}
+
+.carousel-item3{
+    top: 25%;
+    height: 50%;
+    color: #fff;
+    position: relative;
+    text-align: right;
+    /* padding-right: 0px !important;
+    padding-left: 0px !important; */
+}
+
+.carousel-header{
+    font-size: 5rem;
+}
+.carousel-text{
+    font-size: 3rem;
+}
+.carousel-button{
+    font-size: 1.5rem !important;
+    border-radius: 25px !important;
+    margin-top: 20px;
+}
+
 .companyFooter{
     text-align: center;
 }
@@ -221,6 +260,22 @@
     }
     .footer-buttonContainer i{
         font-size: 1.15rem !important;
+    }
+    .carousel-header{
+        font-size: 1.5rem !important;
+    }
+    .carousel-text{
+        font-size: 1rem !important;   
+    }
+    .carousel-button{
+        font-size: 1rem !important;
+    }
+    .carousel-item1{
+        width: 80% !important;
+    }
+    .carousel-item3{
+        padding-right: 25px !important;
+        width: 80% !important;
     }
 }
 
