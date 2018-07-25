@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { AppRoutingModule } from './/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 
 
 import { AppComponent } from './app.component';
@@ -11,6 +11,7 @@ import { SeoService } from './services/seo.service';
 import { ContactService } from './services/contact.service';
 import { ProductService } from './services/products.service';
 import { HomeComponent } from './components/home/home.component';
+import { LocationsComponent } from './components/locations/locations.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CompanyFooterComponent } from './components/company-footer/company-footer.component';
@@ -23,6 +24,7 @@ import { CompanyFooterComponent } from './components/company-footer/company-foot
     NavbarComponent,
     FooterComponent,
     CompanyFooterComponent,
+    LocationsComponent
   ],
   imports: [
     BrowserModule,

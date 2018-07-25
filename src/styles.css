@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-.home{
+.navbarPadding{
     padding-top: 75px !important;
+}
+.home{
     width: 100%;
     margin-left: 0px !important;
     margin-right: 0px !important;

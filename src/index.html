@@ -46,6 +46,12 @@
       $headerHeight = $header.innerHeight(),
       $wrapper = $('#wrapper');
 
+  // $( document ).ready(function() {
+  //   if(window.location.pathname === '/contact'){
+  //     $header.addClass('sticky-header');
+  //   }
+  // });
+
   $(window).scroll(function () {
     var $scrollTop = $(window).scrollTop();
 
@@ -56,6 +62,7 @@
       $header.removeClass('sticky-header');
     }
     if($(window).scrollTop() + $(window).height() == $(document).height()) {
+      console.log('bottom');
       $footer.addClass('sticky-footer');
       $companyFooter.addClass('sticky-companyFooter');
     }else{
